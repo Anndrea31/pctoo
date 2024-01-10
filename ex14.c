@@ -1,21 +1,25 @@
 #include <stdio.h>
 
-int ft_iterative_power(int nb, int power) 
+void ft_iterative_power(int nb, int power) 
 {
     int res;
 res = nb;
     if(power <0){
-        return 0;
+        printf("%d",0);
     }
-    if(power ==0){return 1;
+    if(power ==0){printf("%d",1);
     }
     while(power-- > 1){
         res *=nb;
     }
-    return res;
+printf("%d",res);
 }
 
 
 int main(){
-    ft_iterative_power(5,5);
+    int nb,pow;
+    scanf("%d %d", &nb, &pow);
+
+    ft_iterative_power(nb,pow);
+    return(0);
 }
