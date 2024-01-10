@@ -9,7 +9,7 @@ char main(){
     }
     else
     {printf
-    ("la lettera è una consonante\n");
-    }
+    ("%c,la lettera è una consonante\n", carattere);
+    } else{printf("Il carattere inserito non è una lettera dell alfabeto\n");}
     return 0;
 }
